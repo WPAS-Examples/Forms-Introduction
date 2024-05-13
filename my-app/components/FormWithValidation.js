@@ -22,7 +22,7 @@ export default function FormWithValidation() {
         for (const prop in data) {
             setValue(prop, data[prop]);
         }
-    }, []);
+    }, [setValue]);
 
     function submitForm(data) {
         console.log(data);
